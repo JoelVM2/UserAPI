@@ -5,6 +5,6 @@ import { UserDetail } from './pages/user-detail/user-detail';
 
 export const routes: Routes = [
   { path: '', component: Home },
-  { path: '/users', component: Users },
-  { path: '/create/:id', component: UserDetail },
+  { path: 'users', component: Users },
+  { path: 'users/:id', component: UserDetail },
 ];

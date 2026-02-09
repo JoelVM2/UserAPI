@@ -1,1 +1,15 @@
-<p>users-component works!</p>
+<h1 class="title">Usuarios</h1>
+
+<div class="users-list">
+  @for (user of userService.users; track $index) {
+     <a [routerLink]="['/users/', user.id]">
+    <div class="user-card">
+      <img
+        [src]="user.image"
+        alt="User avatar"
+      />
+      <span>{{ user.firstName }} {{ user.lastName }}</span>
+    </div>
+    </a>
+  }
+</div>

@@ -1,1 +1,13 @@
-<p>user-detail-component works!</p>
+<h1 class="title">Usuarios</h1>
+
+<div class="users-list">
+  @if (selectedUser) {
+    <div class="user-card">
+      <img
+        [src]="selectedUser.image"
+        alt="User avatar"
+      />
+      <span>{{ selectedUser.firstName }} {{ selectedUser.lastName }}</span>
+    </div>
+  }
+</div>
